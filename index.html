@@ -11,9 +11,12 @@
 
     body {
       background-image: linear-gradient(to bottom, #d9f5f9, #cee0e8, #c4ccd3, #b7b9bd, #a7a7a7);
+
+    }
+
+    .container {
+      max-width: 900px;
       margin: 0 auto;
-      color: #fff;
-      max-width: 800px;
 
     }
 
@@ -51,7 +54,7 @@
 
     h4 {
       font-family: "Roboto", sans-serif;
-      font-weight: normal;
+      margin-bottom: 30px;
     }
 
     button {
@@ -84,12 +87,10 @@
     }
 
     img {
-      display: block;
       margin: 0 auto;
-      max-width: 650px;
+      max-width: 400px;
       max-height: 500px;
       border-radius: 20px;
-      padding: 10px;
     }
 
     footer {
@@ -123,32 +124,38 @@
       filter: contrast(80%);
       transform: scale(1.1);
     }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 450px 450px;
+
+    }
   </style>
 </head>
 
 <body>
-  <header>
-    <div class="logo"><a href="https://www.bugatti.com/" target="_blank" class="btn" style="color: #000;">BUGATTI</a>
-    </div>
-    <button class="darkTh">Dark Theme</button>
-  </header>
-  <br />
-  <br />
   <div class="container">
+    <header>
+      <div class="logo"><a href="https://www.bugatti.com/" target="_blank" class="btn" style="color: #000;">BUGATTI</a>
+      </div>
+      <button class="darkTh">Dark Theme</button>
+    </header>
+    <br />
+    <br />
     <h1>EXPERIENCE THE BUGATTI W16 MISTRAL</h1>
-    <h3>THE ULTIMATE ROADSTER, INSPIRED BY A LEGENDARY WIND.</h2>
-      <h4>MODELS
-    </h3>
-
-    <img src="https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-b775ae141ae4d7bf90fce20ac614840d.webp"
-      alt="W16 MISTRAL" class="pic1" title="W16 MISTRAL" />
-
-    <img src="https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-a286eb70a6c011d0a9d0cea76330ace0.webp"
-      alt="ONE OFF MODELS" class="pic1" title="ONE OFF MODELS" />
-    <img src="https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-b9ac49a08e59b99015672f02c9012fa5.webp"
-      alt="CHIRON MODELS" class="pic1" title="CHIRON MODELS" />
-    <img src="https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-5f2e1d15ce568a73feb1001bcf413519.webp"
-      alt="CONCEPT CARS" class="pic1" title="CONCEPT CARS" />
+    <h3>THE ULTIMATE ROADSTER, INSPIRED BY A LEGENDARY WIND.</h3>
+    <h4>MODELS
+    </h4>
+    <div class="grid">
+      <img src="https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-b775ae141ae4d7bf90fce20ac614840d.webp"
+        alt="W16 MISTRAL" class="pic1" title="W16 MISTRAL" style="margin-bottom: 30px;" />
+      <img src="https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-a286eb70a6c011d0a9d0cea76330ace0.webp"
+        alt="ONE OFF MODELS" class="pic1" title="ONE OFF MODELS" style="margin-bottom: 30px;" />
+      <img src="https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-b9ac49a08e59b99015672f02c9012fa5.webp"
+        alt="CHIRON MODELS" class="pic1" title="CHIRON MODELS" />
+      <img src="https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-5f2e1d15ce568a73feb1001bcf413519.webp"
+        alt="CONCEPT CARS" class="pic1" title="CONCEPT CARS" />
+    </div>
     <p>
       Is there anywhere one can enjoy driving more than in an open top car?
       Feeling the wind, the speed; experiencing the purest sensations of
@@ -161,11 +168,12 @@
       the colors he chose for his personal cars.
     </p>
     <button><a href="https://w16mistral.bugatti.com/" class="btn" target="_blank">DISCOVER MORE</a></button>
+    <footer style="color: #000;">
+      Coded by
+      <a href="https://github.com/kianakermani" target="_blank" class="name">Kiana Kermani</a>
+    </footer>
   </div>
-  <footer style="color: #000;">
-    Coded by
-    <a href="https://github.com/kianakermani" target="_blank" class="name">Kiana Kermani</a>
-  </footer>
+
 </body>
 
 </html>

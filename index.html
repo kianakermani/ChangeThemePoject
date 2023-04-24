@@ -10,7 +10,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto:wght@300;400;500;900&display=swap');
 
     body {
-      background-color: black;
+      background-image: linear-gradient(to bottom, #d9f5f9, #cee0e8, #c4ccd3, #b7b9bd, #a7a7a7);
       margin: 0 auto;
       color: #fff;
       max-width: 800px;
@@ -24,6 +24,7 @@
       font-weight: bold;
       font-family: "Roboto", sans-serif;
       text-decoration: underline;
+
     }
 
     header {
@@ -36,6 +37,7 @@
       text-align: center;
       font-family: 'Cabin', sans-serif;
       ;
+      color: #000;
     }
 
     h1 {
@@ -53,7 +55,7 @@
     }
 
     button {
-      background-color: #505050;
+      background-color: black;
       border: 1px solid #444444;
       border-radius: 4px;
       box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
@@ -78,11 +80,16 @@
       font-family: "Roboto", sans-serif;
       text-align: justify;
       line-height: 1.4;
+      color: #000;
     }
 
     img {
       display: block;
       margin: 0 auto;
+      max-width: 650px;
+      max-height: 500px;
+      border-radius: 20px;
+      padding: 10px;
     }
 
     footer {
@@ -95,11 +102,11 @@
 
     .name {
       text-decoration: none;
-      color: white;
+      color: black;
     }
 
     .name:hover {
-      color: red;
+      color: white;
 
     }
 
@@ -107,14 +114,22 @@
       text-decoration: none;
       color: white;
     }
+
+    .pic1 {
+      transition: opacity 100ms ease-in-out;
+    }
+
+    .pic1:hover {
+      opacity: 0.7;
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <div class="logo"><a href="https://www.bugatti.com/" target="_blank" class="btn">BUGATTI</a>
+    <div class="logo"><a href="https://www.bugatti.com/" target="_blank" class="btn" style="color: #000;">BUGATTI</a>
     </div>
-    <button class="darkTh">Light Theme</button>
+    <button class="darkTh">Dark Theme</button>
   </header>
   <br />
   <br />
@@ -123,14 +138,16 @@
     <h3>THE ULTIMATE ROADSTER, INSPIRED BY A LEGENDARY WIND.</h2>
       <h4>MODELS
     </h3>
+
     <img src="https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-b775ae141ae4d7bf90fce20ac614840d.webp"
-      alt="W16 MISTRAL" />
+      alt="W16 MISTRAL" class="pic1" title="W16 MISTRAL" />
+
     <img src="https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-a286eb70a6c011d0a9d0cea76330ace0.webp"
-      alt="ONE OFF MODELS" />
+      alt="ONE OFF MODELS" class="pic2" title="ONE OFF MODELS" />
     <img src="https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-b9ac49a08e59b99015672f02c9012fa5.webp"
-      alt="CHIRON MODELS" />
+      alt="CHIRON MODELS" class="pic3" title="CHIRON MODELS" />
     <img src="https://www.bugatti.com/fileadmin/_processed_/sei/p1/se-image-5f2e1d15ce568a73feb1001bcf413519.webp"
-      alt="CONCEPT CARS" />
+      alt="CONCEPT CARS" class="pic4" title="CONCEPT CARS" />
     <p>
       Is there anywhere one can enjoy driving more than in an open top car?
       Feeling the wind, the speed; experiencing the purest sensations of
@@ -144,7 +161,7 @@
     </p>
     <button><a href="https://w16mistral.bugatti.com/" class="btn" target="_blank">DISCOVER MORE</a></button>
   </div>
-  <footer>
+  <footer style="color: #000;">
     Coded by
     <a href="https://github.com/kianakermani" target="_blank" class="name">Kiana Kermani</a>
   </footer>

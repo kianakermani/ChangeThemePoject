@@ -9,8 +9,9 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto:wght@300;400;500;900&display=swap');
 
-    body {
+    .bgcolor {
       background-image: linear-gradient(to bottom, #d9f5f9, #cee0e8, #c4ccd3, #b7b9bd, #a7a7a7);
+      color: black;
 
     }
 
@@ -28,6 +29,7 @@
       font-family: "Roboto", sans-serif;
       text-decoration: underline;
 
+
     }
 
     header {
@@ -40,7 +42,7 @@
       text-align: center;
       font-family: 'Cabin', sans-serif;
       ;
-      color: #000;
+
     }
 
     h1 {
@@ -84,7 +86,7 @@
       font-family: "Roboto", sans-serif;
       text-align: justify;
       line-height: 1.4;
-      color: #000;
+
     }
 
     img {
@@ -132,20 +134,33 @@
 
     }
 
+    .black {
+      color: #000;
+    }
+
     /* dark theme */
 
     .dark {
       background-color: #000;
+      color: white;
+    }
+
+    .white {
+      color: white;
+    }
+
+    .white .name:hover {
+      color: rgb(129, 129, 129);
     }
   </style>
 </head>
 
-<body class="dark">
+<body class="bgcolor">
   <div class="container">
     <header>
-      <div class="logo"><a href="https://www.bugatti.com/" target="_blank" class="btn" style="color: #000;">BUGATTI</a>
+      <div class="logo"><a href="https://www.bugatti.com/" target="_blank" id="logo" class="black">BUGATTI</a>
       </div>
-      <button class="darkTh">Dark Theme</button>
+      <button class="darkTh">Change Theme</button>
     </header>
     <br />
     <br />
@@ -175,11 +190,55 @@
       the colors he chose for his personal cars.
     </p>
     <button><a href="https://w16mistral.bugatti.com/" class="btn" target="_blank">DISCOVER MORE</a></button>
-    <footer style="color: #000;">
+    <footer class="black">
       Coded by
       <a href="https://github.com/kianakermani" target="_blank" class="name">Kiana Kermani</a>
     </footer>
   </div>
+  <script>
+
+    function changetheme() {
+      let body = document.querySelector("body");
+      if (body.classList.contains("dark")) {
+        body.classList.remove("dark")
+        body.classList.add("bgcolor");
+      }
+      else {
+        body.classList.remove("bgcolor");
+        body.classList.add("dark");
+
+      }
+      let name = document.querySelector("footer");
+      if (name.classList.contains("white")) {
+        name.classList.remove("white");
+        name.classList.add("black");
+      }
+      else {
+        name.classList.remove("black");
+        name.classList.add("white");
+      }
+      let aname = document.querySelector(".name");
+      if (aname.classList.contains("white")) {
+        aname.classList.remove("white");
+      }
+      else {
+        aname.classList.add("white");
+      }
+      let logo = document.querySelector("#logo");
+      if (logo.classList.contains("white")) {
+        logo.classList.remove("white");
+        logo.classList.add("black");
+      }
+      else {
+        logo.classList.remove("black");
+        logo.classList.add("white");
+
+      }
+
+    }
+    let themebutton = document.querySelector(".darkTh");
+    themebutton.addEventListener('click', changetheme)
+  </script>
 
 </body>
 
